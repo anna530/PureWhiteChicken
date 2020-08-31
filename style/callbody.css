@@ -1,0 +1,138 @@
+@charset "utf-8";
+body {
+    background-image: url("../images/macall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover auto auto;
+
+}
+
+.item-job a::after { 
+    width: 100%;
+}
+
+.box {
+    margin-top:155px ;
+    margin-left:975px ;
+    width: 650px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.little p {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom:20px ;
+}
+
+.box__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #3b3b3b;
+}
+
+.box__title-left h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.box__title-right p {
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.box__title-left {
+    width: 50%;
+}
+
+.box__title-right {
+    width: 50%;
+}
+
+.box__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.box__form label {
+    color: #919191;
+}
+
+.box__form div {
+    display: inline-block;
+    padding: 10px;
+}
+
+.input-name, .select-category,
+.input-tel, .input-mobile,
+.input-captcha, .input-submit {
+    width: 50%;
+}
+
+.input-email, .textarea-message {
+    width: 100%;
+}
+
+.form-name, .form-category, 
+.form-email, .form-tel,
+.form-mobile, .form-message,
+.form-captcha {
+    background-color: #eeeeee;
+    padding: 10px;
+    
+}
+
+.form-submit {
+    color: #fff;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+input {
+    border: none;
+    background-color: #eeeeee;      
+}
+
+
+select {
+    width: 150px;
+    border: none;
+    background-color:#eeeeee ;
+}
+
+textarea {
+    color: #777777;
+    border: none;
+    background-color:#eeeeee ;
+    padding-left: 10px;
+}
+
+.form-submit {
+    text-align: center;
+    align-items: center;
+}
+.form-submit input {
+    color: #fff;
+    text-align: center;
+    background-color: #3b3b3b;
+}
+.form-message {
+    display: flex;
+}
+
+@media screen and (max-width: 1440px) {
+    .box {
+        margin-top:135px ;
+        margin-left:590px ;
+    }
+
+ 
+}

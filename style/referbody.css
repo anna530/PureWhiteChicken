@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+body {
+    background-image: url(../images/bg.jpg);
+}
+
+.item-job a::after { 
+    width: 100%;
+}
+
+.marefer {
+    margin-top:155px ;
+    position: relative;
+}
+
+.marefer__bun {
+    position: absolute;
+    top: 0;
+    right: 450px;
+}
+.marefer__bg {
+    padding: 80px 80px 30px 80px;
+    background-color: #ffffff;
+    margin: 0 400px;
+    border-radius: 50px;
+}
+
+
+.marefer-title {
+    margin-top: 20px;
+    text-align: center;
+}
+.marefer-title h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.marefer-title span {
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.marefer-title p {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.marefer-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.marefer-form label {
+    color: #919191;
+}
+
+.input-name, .input-area, .input-mobile,
+.input-email, .input-exp, .input-exp,
+.input-captcha, .input-submit  {
+    width: 33.333%;
+}
+
+.textarea-message {
+    width: 100%;
+}
+
+.marefer-form div {
+    display: inline-block;
+    padding: 10px;
+}
+
+.marefer-form form {
+    background-color: #eeeeee;
+    padding: 15px;
+}
+
+input {
+    border: none;
+    background-color: #eeeeee;
+    width: 180px;
+}
+textarea {
+    border: none;
+    background-color:#eeeeee ;
+    color: #3b3b3b;
+    margin-left: 5px;
+}
+
+.form-message {
+    display: flex;
+}
+.input-captcha, .input-submit {
+    margin-top: 10px;
+}
+
+.form-submit {
+    margin: 0 50px;
+}
+.input-submit .form-submit  {
+    background-color: #3b3b3b;
+    border-radius: 10px;
+}
+
+.input-submit input {
+    align-items: center;
+    color:#ffff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #3b3b3b;
+    font-family: Arial, Helvetica, sans-serif, "微軟正黑體";
+}
+
+
+.little p {
+    font-size: 12px;
+    text-align: center;
+    margin:20px 0 ;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .marefer {
+        margin-top:135px ;
+    }
+    
+    .marefer__bun {
+        right: 310px;
+    }
+    .marefer__bg {
+        padding: 65px 65px 30px 65px;
+        background-color: #ffffff;
+        margin: 0 250px;
+        border-radius: 50px;
+    }
+    input {
+        width: 130px;
+    }
+    .form-submit {
+        margin: 0 45px;
+    }
+
+    
+}

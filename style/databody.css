@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+.item-job a::after { 
+    width: 100%;
+}
+
+body {
+    background-image: url(../images/bg.jpg);  
+}
+
+.marefer {
+    margin-top:155px ;
+    position: relative;
+}
+
+.marefer__bun {
+    position: absolute;
+    top: 0;
+    right: 450px;
+}
+.marefer__bg {
+    padding: 80px 80px 30px 80px;
+    background-color: #ffffff;
+    margin: 0 400px;
+    border-radius: 50px;
+}
+
+.marefer-title {
+    margin-top: 20px;
+    text-align: center;
+}
+.marefer-title h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.marefer-title span {
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.marefer-title p {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.marefer__inner {
+    margin-top: 30px;
+}
+
+.marefer__inner p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+}
+.marefer__enter {
+    background-color: #3b3b3b;
+    width: 245px;
+    height: 68px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.marefer__enter a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 68px;
+}
+
+.little p {
+    font-size: 12px;
+    text-align: center;
+    margin-top:20px ;
+    margin-bottom:20px ;
+}
+
+@media screen and (max-width: 1440px) {
+    .marefer {
+        margin-top:135px ;
+    }
+    
+    .marefer__bun {
+        right: 310px;
+    }
+    .marefer__bg {
+        padding: 65px 65px 30px 65px;
+        background-color: #ffffff;
+        margin: 0 250px;
+        border-radius: 50px;
+    }
+}
