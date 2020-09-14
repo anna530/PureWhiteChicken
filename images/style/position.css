@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+body {
+    background-image: url("../images/mastore.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item-job a::after { 
+    width: 100%;
+}
+.box {
+    margin-top: 155px;
+    margin-left: 625px;
+    width: 1000px;
+    height: auto;
+    display: flex;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 60px;
+}
+.pos {
+    position: relative;
+}
+
+.pos__bun {
+    position: absolute;
+    top: 0;
+    right: 350px;
+}
+
+.box__img {
+    vertical-align: middle;
+}
+
+.box__inner {
+    margin: auto 0;
+    margin-left:20px ;
+}
+
+.box__inner h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.box__inner p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.little p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .box {
+        margin-top: 135px;
+        margin-left: 475px;
+        width: 770px;
+        height: 570px;
+        padding: 120px 30px 120px 60px;
+        justify-self: center;
+    }
+    .pos__bun {
+        position: absolute;
+        top: 0;
+        right: 250px;
+    }
+    .box__img {
+        width: 75%;
+    }
+
+    .box__inner h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .box__inner p {
+        font-size: 12px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .little p {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+ 
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: auto;
+    }
+
+    .body {
+        margin-top: 60px;
+    }
+    
+    .pos__bun {
+        top: 0;
+        left: 0;
+        
+    }
+
+    .pos__bun img {
+        width: 35%;
+    
+    }
+    
+    .box {
+        display: block;
+        margin-top: 75px;
+        margin-left: 0px;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        border-radius: 30px;
+    }
+    
+    .box__img {
+        width: 100%;
+    }
+
+    .box__inner {
+        margin: 20px 0 0 0;
+    }
+
+    .box__inner h2 {
+        font-size: 24px;
+    }
+    .box__inner p {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    
+    
+    .little p {
+        font-size: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+}

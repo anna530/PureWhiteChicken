@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+body {
+    background-image: url(../images/bg.jpg);
+}
+
+
+.adv {
+    position: relative;
+    height: 900px;
+}
+
+.adv-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.news {
+    background-image: url(../images/indexbg-1.jpg);
+    height: 1000px;
+}
+
+.menus {
+    background-image: url(../images/index-menus-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    position: relative;
+}
+
+.stores {
+    background-image: url(../images/indexbg-1.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+
+/* content__title-------------------------------------- */
+.content__title h2, .content__title p{
+    text-align: center;
+}
+
+.content__title h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #3b3b3b;
+}
+
+.content__title {
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.content__title p {
+    color: #d60000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+/* content__news-------------------------------------- */
+.content__news {
+    position: relative;
+    margin: 0 auto;
+    height: 750px;
+    width: 1650px;
+}
+
+.mask { 
+    overflow: hidden;
+} 
+
+
+.news__ls { 
+    position: absolute;
+    top: 0;
+    left: 0px;
+    display: flex;
+}
+
+.news__item {
+    width: 550px;
+    height: auto;
+    padding: 60px;
+}
+
+.item__img {
+   display: inline-block;
+}
+
+.item__desc {
+    margin-top: 20px;
+    color: #3b3b3b;
+}
+
+.item__desc h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: solid 2px #3b3b3b;
+    
+}
+
+.item__desc p {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+
+/* pagination------------------------------------------- */
+.pagination {
+    text-align: center;
+    
+}
+
+.pagination__item {
+    background-color: #9b9b9b;
+    padding: 12px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.pagination__item:hover {
+    background-color: #3b3b3b;
+}
+
+/* more --------------------------------------------------*/
+.news {
+    position: relative;
+}
+
+.more {
+    position: absolute;
+    top: 880px;
+    right: 40px;
+}
+
+.more-m {
+    position: absolute;
+    top: 850px;
+    right: 40px;
+}
+
+.more-s {
+    position: absolute;
+    top: 850px;
+    right: 40px;
+}
+/* menus-------------------------------------------------- */
+
+.menus__img-1 {
+    position: absolute;
+
+    width: 40%;
+}
+
+.menus__img-2 {
+    position: absolute;
+
+    width: 30%;
+    top: 10px;
+    left: 1100px;
+}
+
+.cato__ls {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+.cato__item {
+    margin: 0 60px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.cato__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 356px;
+    height: 510.5px;
+    background-color: rgba(0, 0, 0, 0.8);   
+    display: none;
+
+}
+
+.cato__item__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+.cato__item__title a {
+    text-decoration: none;
+    
+}
+.cato__item__title h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.cato__item:hover::before {
+    display: block;
+}
+
+.cato__item:hover .cato__item__title {
+    display: block;
+}
+
+/* stores------------------------------------------------ */
+.content__left {
+    float: left;
+    margin-left: 100px;
+}
+
+.content__left img {
+    width: 80%;
+}
+
+.content__right {
+    float: right;
+    margin-right: 50px;
+}
+
+.content__right img {
+    width: 90%;
+}
+
+/* js---------------------------------------------------- */
+
+.js-pagination__item,
+.js-pagination__item:hover {
+    background-color: #3b3b3b;
+}
+
+
+/* footer------------------------------------------------ */
+.little p {
+    font-size: 12px;
+    text-align: center;
+    margin:20px 0 ;
+}
+
+
+
+
+
+/* RWD-------------------------------------------------- */
+@media screen and (max-width: 1440px) {
+    .adv {
+        height: 750px;
+    }
+
+
+    /* news--------------------------------------------- */
+    .content__title h2 {
+        font-size: 24px;
+    }
+    
+    .content__title {
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .content__title p {
+        font-size: 20px;
+    }
+
+    .item__desc h2 {
+        font-size: 20px;
+        border-bottom: solid 1px #3b3b3b;
+        
+    }
+    
+    .item__desc p {
+        font-size: 14px;
+    }
+
+    .news {
+        height: 900px;
+    }
+
+    .content__news {
+        height: 660px;
+        width: 1350px;
+    }
+
+    .news__item {
+        width: 450px;
+    }
+
+    .more {
+        top: 780px;
+    }
+
+    .pagination__item {
+        margin: 0 8px;
+        padding: 10px;
+    }
+    /* menus--------------------------------------------- */
+    .menus__img-1 {
+        width: 35%;
+    }
+    .menus__img-2 {
+        width: 35%;
+        top: 40px;
+        left: 900px;
+    }
+
+    .cato__ls {
+        padding-top: 200px;
+        margin: 0 80px;
+    }
+
+    .cato__item {
+        margin: 0 auto;
+    }
+    
+
+    .cato__item img {
+        padding: 50px;
+    }
+
+
+    .cato__item::before {
+        top: 50px;
+        left: 50px;
+        width: 326.664px;
+        height: 466.133px;
+    
+    }
+    .cato__item__title h2 {
+        font-size: 24px;
+    }
+
+    .cato__item__title img {
+        padding: 0;
+    }
+
+    .more-m {
+        top: 850px;
+        right: 40px;
+    }
+
+    /* stores------------------------------------------------ */
+    .content__left {
+        float: left;
+        margin-left: 0;
+        padding: 0 25px;
+        width: 50%;
+    }
+
+    .content__left img {
+        width: 100%;
+    }
+
+    .content__right {
+        float: right;
+        margin-right: 0px;
+        margin-top: 100px;
+        padding: 0 50px;
+        width: 50%;
+    }
+
+    .content__right img {
+        width: 100%;
+    }
+  
+
+}
